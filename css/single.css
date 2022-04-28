@@ -1,0 +1,156 @@
+.single-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.single-text h1 {
+    font-size: 6rem;
+    width: 100%;
+}
+
+.single-text h2 {
+    font-size: 4.6rem;
+    width: 100%;
+}
+
+.single-text h3 {
+    font-size: 3.8rem;
+    width: 100%;
+}
+
+.single-text h4 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+.single-text h5 {
+    font-size: 2rem;
+    width: 100%;
+}
+
+.single-text h6 {
+    font-size: 1.9rem;
+    width: 100%;
+}
+
+.single-text {
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 30px 80px 30px 80px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.single-text p {
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.single-text div img {
+    width: 100%;
+    max-height: 800px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.post-date {
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+}
+
+span.tags {
+    font-size: 1.6rem;
+    border-radius: 3px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+span.tags a {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+.fa-tag {
+    padding: 0 10px;
+}
+
+span.comment a {
+    color: var(--black);
+}
+
+.fa-comment {
+    padding-right: 5px;
+}
+
+
+@media (min-width: 2000px) {
+    .single-text {
+        width: 70%;
+    }
+}
+
+@media (min-width: 2200px) {
+    .single-text {
+        width: 60%;
+    }
+}
+
+@media (max-width:1200px) {
+    .single-text img.size-full {
+        height: 400px;
+    }
+
+    .single-text {
+        padding: 30px 60px 30px 60px;
+    }
+}
+
+@media (max-width:768px) {
+    .single-text {
+        width: 85%;
+    }
+
+    .single-text img.size-full {
+        height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .single-text {
+        width: 90%;
+        padding: 30px 50px 30px 50px;
+    }
+
+    .single-text img.size-full {
+        height: 250px;
+    }
+}

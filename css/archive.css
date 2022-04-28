@@ -1,0 +1,179 @@
+.archive-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.archive-text {
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 30px 70px 30px 70px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.post-wrapper {
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    background-color: rgb(24, 24, 24);
+    height: 400px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.post-wrapper:hover {
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.date-comment-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 0 0;
+    color: var(--white);
+    user-select: none;
+}
+
+.post-tittle {
+    z-index: 2;
+    display: block;
+    background-color: var(--black);
+    -webkit-text-stroke: 1px black;
+    font-size: 4rem;
+    padding: 20px 10px;
+}
+
+.post-tittle a {
+    display: inline;
+    transition: .2s ease-in;
+}
+
+.post-tittle a:hover {
+    opacity: .9;
+}
+
+.post-date-archive,
+.post-comment-number {
+    width: 40%;
+    margin: 5px 5px;
+}
+
+.post-desc-container {
+    z-index: 1;
+    background-color: rgb(27, 27, 27, .5);
+    transition: left .3s ease;
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    padding: 40px 10px;
+    height: 100%;
+    user-select: none;
+}
+
+.post-desc {
+    font-size: 1.4rem;
+    color: var(--white);
+
+}
+
+.post-wrapper:hover .post-desc-container {
+    left: 50%;
+}
+
+
+.post-thumbnail {
+    position: absolute;
+    user-select: none;
+    width: 120%;
+    right: -50px;
+    transition: right .2s ease-in;
+}
+
+.post-wrapper:hover .post-thumbnail {
+    right: 0;
+}
+
+.read-more-btn {
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    border-top: 2px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    background-color: rgb(27, 27, 27);
+    color: var(--white);
+}
+
+@media (min-width: 2000px) {
+    .archive-text {
+        width: 70%;
+    }
+}
+
+@media (min-width: 2200px) {
+    .archive-text {
+        width: 60%;
+    }
+}
+
+@media (max-width:1450px) {
+    .archive-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width:1200px) {
+    .archive-text {
+        padding: 30px 30px 40px 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .archive-text {
+        padding: 30px 10px 40px 10px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 425px) {
+    .archive-text {
+        width: 90%;
+        padding: 10px 5px 10px 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .archive-text {
+        width: 95%;
+        padding: 5px 3px 5px 3px;
+    }
+
+    .post-tittle {
+        font-size: 3.4rem;
+    }
+}
